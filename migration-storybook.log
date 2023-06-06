@@ -1,0 +1,58 @@
+🔎 checking possible migrations..
+
+🔎 found a 'eslintPlugin' migration:
+╭ Automigration detected ──────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                      │
+│   We've detected you are not using our eslint-plugin.                                                                                │
+│                                                                                                                                      │
+│   In order to have the best experience with Storybook and follow best practices, we advise you to install eslint-plugin-storybook.   │
+│                                                                                                                                      │
+│   More info: https://github.com/storybookjs/eslint-plugin-storybook#readme                                                           │
+│                                                                                                                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'eslintPlugin' migration on your project? » (Y/n)√ Do you want to run the 'eslintPlugin' migration on your project? ... yes
+✅ Adding dependencies: eslint-plugin-storybook
+An error occurred while installing dependencies.
+
+❌ error when running eslintPlugin migration
+HandledError
+    at NPMProxy.addDependencies (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:37:1198)
+    at Object.run (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:114:212)
+    ... 5 lines matching cause stack trace ...
+    at async initiate (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:367:109) {
+  handled: true,
+  cause: Error
+      at NPMProxy.executeCommand (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:39:1699)
+      at NPMProxy.runAddDeps (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:39:2894)
+      at NPMProxy.addDependencies (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:37:1036)
+      at Object.run (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:114:212)
+      at runFixes (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:326:1152)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async automigrate (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:321:636)
+      at async doInitiate (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:356:373)
+      at async withTelemetry (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\core-server\dist\index.js:35:3422)
+      at async initiate (C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\node_modules\@storybook\cli\dist\generate.js:367:109)
+}
+
+
+╭ Migration check ran with failures ───────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                  │
+│   Failed migrations:                                                                                                                             │
+│                                                                                                                                                  │
+│   eslintPlugin:                                                                                                                                  │
+│                                                                                                                                                  │
+│                                                                                                                                                  │
+│   You can find the full logs in C:\Users\kamal\OneDrive\Desktop\KAMAL\DEMO_ISMART\migration-storybook.log                                        │
+│                                                                                                                                                  │
+│   ─────────────────────────────────────────────────                                                                                              │
+│                                                                                                                                                  │
+│   If you'd like to run the migrations again, you can do so by running 'npx storybook@next automigrate'                                           │
+│                                                                                                                                                  │
+│   The automigrations try to migrate common patterns in your project, but might not contain everything needed to migrate to the latest version    │
+│   of Storybook.                                                                                                                                  │
+│                                                                                                                                                  │
+│   Please check the changelog and migration guide for manual migrations and more information: https://storybook.js.org/migration-guides/7.0       │
+│   And reach out on Discord if you need help: https://discord.gg/storybook                                                                        │
+│                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
